@@ -1,13 +1,12 @@
 package com.projeto.dsmeta.entities;
 
 import java.time.LocalDate;
-
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 
 @Entity
 @Table(name = "tb_sales")
@@ -29,6 +28,10 @@ public class Sale {
         this.deals = deals;
         this.amount = amount;
         this.date = date;
+    }
+
+    public Sale() {
+
     }
 
     public long getId() {
